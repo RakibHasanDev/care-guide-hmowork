@@ -5,13 +5,13 @@ import navLogo from '../../../src/Assests/logo.png'
 
 
 const NavBar = () => {
-    
+
     const user = {};
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
- 
 
-   
+
+
     return (
         <div className=" sticky top-0 z-50 py-1">
             <div className="px-4 py-2 mx-auto w-[95%]">
@@ -24,10 +24,10 @@ const NavBar = () => {
                     >
                         <img src={navLogo} className='w-12 h-10' alt="" />
                         <span className="ml-4 font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900">
-                          Cottage Home Care Service
+                            Cottage Home Care Service
                         </span>
                     </NavLink>
-                  
+
                     <ul className="flex items-center hidden space-x-6 lg:flex">
                         <li>
                             <NavLink
@@ -49,8 +49,8 @@ const NavBar = () => {
                                 Services
                             </NavLink>
                         </li>
-                     
-                    
+
+
                         <li>
                             <NavLink
                                 to='/blog'
@@ -61,7 +61,7 @@ const NavBar = () => {
                                 Contact Us
                             </NavLink>
                         </li>
-                    
+
                         <li>
                             <NavLink
                                 to='/blog'
@@ -72,7 +72,7 @@ const NavBar = () => {
                                 Covid-19
                             </NavLink>
                         </li>
-                    
+
                         <li>
                             <NavLink
                                 to='/blog'
@@ -103,12 +103,12 @@ const NavBar = () => {
                                 Blog
                             </NavLink>
                         </li>
-                       
+
 
 
 
                     </ul>
-                  
+
                     <div className="lg:hidden">
                         <button
                             aria-label="Open Menu"
@@ -133,7 +133,7 @@ const NavBar = () => {
                         </button>
                         {isMenuOpen && (
                             <div className="absolute top-0 left-0 w-full">
-                                <div className="p-5 bg-sky-600 border rounded shadow-sm">
+                                <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <NavLink
@@ -142,9 +142,9 @@ const NavBar = () => {
                                                 title="Learn With Programming"
                                                 className="inline-flex items-center"
                                             >
-                                                <img src={""} className='w-12' alt="" />
-                                                <span className="ml-2 text-md  tracking-wide text-white hover:text-blue-900">
-                                                    Wedding Photography
+                                                <img src={navLogo} className='w-12' alt="" />
+                                                <span className="ml-2 text-md  tracking-wide text-[#0F4E66] hover:text-blue-900">
+                                                    Cottage Home Care Service
                                                 </span>
                                             </NavLink>
                                         </div>
@@ -165,8 +165,10 @@ const NavBar = () => {
                                         </div>
                                     </div>
                                     <nav>
-                                       
-                                        {/* <ul className="space-y-4">
+
+
+
+                                        <ul className="space-y-4">
                                             <li>
                                                 <NavLink
                                                     to='/home'
@@ -196,86 +198,57 @@ const NavBar = () => {
                                                     title="Blog"
                                                     className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
+                                                    Contact Us
+                                                </NavLink>
+                                            </li>
+
+                                            <li>
+                                                <NavLink
+                                                    to='/blog'
+                                                    aria-label="Blog"
+                                                    title="Blog"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                >
+                                                    Covid-19
+                                                </NavLink>
+                                            </li>
+
+                                            <li>
+                                                <NavLink
+                                                    to='/blog'
+                                                    aria-label="Blog"
+                                                    title="Blog"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                >
+                                                    HHA Certification
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink
+                                                    to='/blog'
+                                                    aria-label="Blog"
+                                                    title="Blog"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                >
+                                                    Resources
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink
+                                                    to='/blog'
+                                                    aria-label="Blog"
+                                                    title="Blog"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                >
                                                     Blog
                                                 </NavLink>
                                             </li>
-                                            {
-                                                user?.uid ?
-                                                    <>
-
-                                                    
-                                                        <li>
-                                                            <NavLink
-                                                                to='/myReview'
-                                                                aria-label="myReview"
-                                                                title="myReview"
-                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
-                                                            >
-                                                                My Review
-                                                            </NavLink>
-                                                        </li>
-                                                        <li>
-                                                            <NavLink
-                                                                to='/cart'
-                                                                aria-label="myOrder"
-                                                                title="myOrder"
-                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
-                                                            >
-                                                                My Order
-                                                            </NavLink>
-                                                        </li>
-                                                        <li>
-                                                            <button onClick={logOutHandler}
-                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"> Log Out</button>
-                                                        </li>
-                                                    </>
-                                                    :
-                                                    <>
-                                                        <li>
-                                                            <NavLink
-                                                                to='/login'
-                                                                aria-label="login"
-                                                                title="login"
-                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
-                                                            >
-                                                                Login
-                                                            </NavLink>
-                                                        </li>
-
-                                                        <li>
-                                                            <NavLink
-                                                                to='/register'
-                                                                aria-label="register"
-                                                                title="register"
-                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
-                                                            >
-                                                                Register
-                                                            </NavLink>
-                                                        </li>
-                                                    </>
-                                            }
-
-                                            {
-                                                user?.uid ?
-                                                    <>  <li>
-
-                                                        <img src={user?.photoURL}
-                                                            title={user?.displayName}
-                                                            className='rounded-full h-10 w-10' alt="" />
-                                                    </li></>
-                                                    :
-                                                    <>
-                                                        <FaUserAlt
-                                                            title='Your Profile'
-                                                            className='text-2xl' />
-                                                    </>
-                                            }
 
 
 
 
+                                        </ul>
 
-                                        </ul> */}
                                     </nav>
                                 </div>
                             </div>
