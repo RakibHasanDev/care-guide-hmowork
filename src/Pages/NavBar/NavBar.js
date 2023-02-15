@@ -13,7 +13,7 @@ const NavBar = () => {
 
    
     return (
-        <div className="bg-sky-600 sticky top-0 z-50 py-1">
+        <div className=" sticky top-0 z-50 py-1">
             <div className="px-4 py-2 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink
@@ -23,7 +23,7 @@ const NavBar = () => {
                         className="inline-flex items-center"
                     >
                         <img src={navLogo} className='w-12 h-10' alt="" />
-                        <span className="ml-4 text-md md:text-lg  tracking-wide text-gray-100 hover:text-blue-900">
+                        <span className="ml-4 font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900">
                           Cottage Home Care Service
                         </span>
                     </NavLink>
@@ -34,7 +34,7 @@ const NavBar = () => {
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Home
                             </NavLink>
@@ -44,7 +44,7 @@ const NavBar = () => {
                                 to='/services'
                                 aria-label="services"
                                 title="services"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Services
                             </NavLink>
@@ -56,7 +56,49 @@ const NavBar = () => {
                                 to='/blog'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                            >
+                                Contact Us
+                            </NavLink>
+                        </li>
+                    
+                        <li>
+                            <NavLink
+                                to='/blog'
+                                aria-label="Blog"
+                                title="Blog"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                            >
+                                Covid-19
+                            </NavLink>
+                        </li>
+                    
+                        <li>
+                            <NavLink
+                                to='/blog'
+                                aria-label="Blog"
+                                title="Blog"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                            >
+                                HHA Certification
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to='/blog'
+                                aria-label="Blog"
+                                title="Blog"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                            >
+                                Resources
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to='/blog'
+                                aria-label="Blog"
+                                title="Blog"
+                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Blog
                             </NavLink>
@@ -130,7 +172,7 @@ const NavBar = () => {
                                                     to='/home'
                                                     aria-label="Home"
                                                     title="Home"
-                                                    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Home
                                                 </NavLink>
@@ -140,7 +182,7 @@ const NavBar = () => {
                                                     to='/services'
                                                     aria-label="services"
                                                     title="services"
-                                                    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Services
                                                 </NavLink>
@@ -152,7 +194,7 @@ const NavBar = () => {
                                                     to='/blog'
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Blog
                                                 </NavLink>
@@ -167,7 +209,7 @@ const NavBar = () => {
                                                                 to='/myReview'
                                                                 aria-label="myReview"
                                                                 title="myReview"
-                                                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                             >
                                                                 My Review
                                                             </NavLink>
@@ -177,14 +219,14 @@ const NavBar = () => {
                                                                 to='/cart'
                                                                 aria-label="myOrder"
                                                                 title="myOrder"
-                                                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                             >
                                                                 My Order
                                                             </NavLink>
                                                         </li>
                                                         <li>
                                                             <button onClick={logOutHandler}
-                                                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"> Log Out</button>
+                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"> Log Out</button>
                                                         </li>
                                                     </>
                                                     :
@@ -194,7 +236,7 @@ const NavBar = () => {
                                                                 to='/login'
                                                                 aria-label="login"
                                                                 title="login"
-                                                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                             >
                                                                 Login
                                                             </NavLink>
@@ -205,7 +247,7 @@ const NavBar = () => {
                                                                 to='/register'
                                                                 aria-label="register"
                                                                 title="register"
-                                                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                             >
                                                                 Register
                                                             </NavLink>
