@@ -85,7 +85,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to='/blog'
+                                to='/resources'
                                 aria-label="Blog"
                                 title="Blog"
                                 className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
@@ -168,6 +168,8 @@ const NavBar = () => {
 
 
 
+
+
                                         <ul className="space-y-4">
                                             <li>
                                                 <NavLink
@@ -193,7 +195,7 @@ const NavBar = () => {
 
                                             <li>
                                                 <NavLink
-                                                    to='/blog'
+                                                    to='/contacts'
                                                     aria-label="Blog"
                                                     title="Blog"
                                                     className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
@@ -204,7 +206,7 @@ const NavBar = () => {
 
                                             <li>
                                                 <NavLink
-                                                    to='/blog'
+                                                    to='/covid'
                                                     aria-label="Blog"
                                                     title="Blog"
                                                     className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
@@ -215,7 +217,7 @@ const NavBar = () => {
 
                                             <li>
                                                 <NavLink
-                                                    to='/blog'
+                                                    to='/hhaCertification'
                                                     aria-label="Blog"
                                                     title="Blog"
                                                     className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
@@ -225,7 +227,7 @@ const NavBar = () => {
                                             </li>
                                             <li>
                                                 <NavLink
-                                                    to='/blog'
+                                                    to='/resources'
                                                     aria-label="Blog"
                                                     title="Blog"
                                                     className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"

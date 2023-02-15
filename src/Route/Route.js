@@ -1,6 +1,8 @@
+import Blog from "../Pages/Blog/Blog";
 import Contacts from "../Pages/Contacts/Contacts";
 import Covid from "../Pages/Covid/Covid";
 import HHACertification from "../Pages/HHACertification/HHACertification";
+import Resourses from "../Pages/Resourses/Resourses";
 import Services from "../Pages/Services/Services";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -38,6 +40,14 @@ const router = createBrowserRouter ([
             {
                 path: '/hhaCertification',
                 element: <HHACertification></HHACertification>
+            },
+            {
+                path: '/resources',
+                element: <Resourses></Resourses>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             },
         ]
 
