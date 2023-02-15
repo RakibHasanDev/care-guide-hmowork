@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import navLogo from '../../../src/Assests/logo.png'
+
+
 const NavBar = () => {
     
     const user = {};
@@ -11,7 +14,7 @@ const NavBar = () => {
    
     return (
         <div className="bg-sky-600 sticky top-0 z-50 py-1">
-            <div className="px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+            <div className="px-4 py-2 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink
                         to='/'
@@ -19,7 +22,7 @@ const NavBar = () => {
                         title="Learn With Programming"
                         className="inline-flex items-center"
                     >
-                        {/* <img src={navLogo} className='w-12 h-10' alt="" /> */}
+                        <img src={navLogo} className='w-12 h-10' alt="" />
                         <span className="ml-4 text-md md:text-lg  tracking-wide text-gray-100 hover:text-blue-900">
                           Cottage Home Care Service
                         </span>

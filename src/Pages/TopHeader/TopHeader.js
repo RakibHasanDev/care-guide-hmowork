@@ -13,11 +13,11 @@ const TopHeader = () => {
           <div className='w-[95%] md:w-11/12 mx-auto flex justify-between'>
          <div className='flex gap-5 items-center text-xs'>
          <div>
-             <p className='flex gap-1.5 text-white items-center text-xs'> <BsFillTelephoneFill/> 929-413-8565 </p>
+             <p className='flex gap-1.5 text-white items-center text-xs'> <BsFillTelephoneFill/> 516-367-2266 </p>
             </div>
                 
             <div >
-            <p className='flex items-center  text-white gap-1'> <IoMdMail/> careguide@gmail.com </p>
+            <p className='flex items-center  text-white gap-1'> <IoMdMail/> info@cottagehomecare.com </p>
             </div>
          </div>
             <div className='flex items-center gap-1.5 text-white'>
