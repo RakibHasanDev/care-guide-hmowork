@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import navLogo from '../../../src/Assests/logo.png'
+import navLogo from '../../../src/Assests/Cottage Home.png'
 
 
 const NavBar = () => {
@@ -22,7 +22,7 @@ const NavBar = () => {
                         title="Learn With Programming"
                         className="inline-flex items-center"
                     >
-                        <img src={navLogo} className='w-12 h-10' alt="" />
+                        <img src={navLogo} className='w-[80px] h-14' alt="" />
                         <span className="ml-4 font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900">
                             Cottage Home Care Service
                         </span>
