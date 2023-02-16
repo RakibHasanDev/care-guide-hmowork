@@ -13,7 +13,7 @@ const NavBar = () => {
 
 
     return (
-        <div className=" sticky top-0 z-50 py-1">
+        <div className=" sticky top-10 z-50 py-1">
             <div className="px-4 py-2 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink
@@ -23,7 +23,7 @@ const NavBar = () => {
                         className="inline-flex items-center"
                     >
                         <img src={navLogo} className='w-[80px] h-14' alt="" />
-                        <span className="ml-4 font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900">
+                        <span className="ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#0F4E66] transition-colors duration-200  hover:text-teal-accent-400 hover:text-blue-900">
                             Cottage Home Care Service
                         </span>
                     </NavLink>
