@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto+Slab:wght@500&display=swap');
+
+.lobStar{
+    font-family: 'Lobster', cursive;
+}
+
 .bg-contact {
     background-image: url('https://i.ibb.co/hmqmMXr/welcome-picture.jpg');
     background-attachment: fixed;
@@ -13,5 +19,6 @@
 
 
 .bg-simple {
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: rgba(0, 0, 0, 0.315);
 }
+
