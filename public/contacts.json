@@ -1,7 +1,7 @@
 [
     {   "id" : 1,
         "office" : "Hicksville Office",
-        " Address" : "25 Newbridge Road, Suite 302, Hicksville, New York 11801, United States",
+        "address" : "25 Newbridge Road, Suite 302, Hicksville, New York 11801, United States",
         "map" : " https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5082.045794732654!2d-73.5283623409667!3d40.76636822184964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c280e280b85923%3A0x6d08773ea58e3908!2s25%20Newbridge%20Rd%20Unit%20302%2C%20Oyster%20Bay%2C%20NY%2011801%2C%20USA!5e0!3m2!1sen!2sbd!4v1676655683971!5m2!1sen!2sbd",
         "Hours": [
             "Mon 09:00 am – 05:00 pm",
@@ -15,7 +15,7 @@
     },
     {   "id" : 2,
         "office" : "Queens office",
-        " Address" : "126-01 Liberty Avenue, South Richmond Hill Queens, New York 11419, United States",
+        "address" : "126-01 Liberty Avenue, South Richmond Hill Queens, New York 11419, United States",
         "map" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271.9964871674906!2d-73.81919014610024!3d40.6886291413847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2674a760842a7%3A0x82e235bd10b20fbf!2s126-01%20Liberty%20Ave%2C%20Jamaica%2C%20NY%2011419%2C%20USA!5e0!3m2!1sen!2sbd!4v1676656676448!5m2!1sen!2sbd",
         "Hours": [
             "Mon 09:00 am – 05:00 pm",
@@ -27,9 +27,9 @@
             "Sun Closed"
         ]         
     },
-    {   "id" : 2,
+    {   "id" : 3,
         "office" : "Bronx Office",
-        " Address" : "391 East 149th Street, Bronx, New York 10455, United States",
+        "address" : "391 East 149th Street, Bronx, New York 10455, United States",
         "map" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.5251983972094!2d-73.92030908464265!3d40.81642633915737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f5c8cbeb9cad%3A0x62ee200e1f45a264!2s391%20E%20149th%20St%2C%20The%20Bronx%2C%20NY%2010455%2C%20USA!5e0!3m2!1sen!2sbd!4v1676656751261!5m2!1sen!2sbd",
         "Hours": [
             "Mon 09:00 am – 05:00 pm",

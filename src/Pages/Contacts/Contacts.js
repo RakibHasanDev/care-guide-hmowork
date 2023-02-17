@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './contact.css'
+import ContactCard from './ContactCard';
 
 const Contacts = () => {
 
@@ -36,11 +37,18 @@ const Contacts = () => {
             </div>
 
             <div className=' -mt-24'>
-                <h1 className='text-center text-[#F6811C] text-3xl font-semibold crimson'> Contact Us With The Following Address </h1>
-                <div className='grid grid-cols-2 gap-7 w-11/12 mx-auto mt-8'>
+                <h1 className='text-center text-[#F6811C] text-3xl font-semibold crimson'> Contact Us With The Following Offices </h1>
+                <div className='grid   gap-8 w-11/12 mx-auto mt-8'>
 
                     {
-                        
+                       contacts.map(contact=>
+                       <ContactCard
+                       key={contact.id}
+                       contact={contact}
+                       >
+
+
+                       </ContactCard>) 
                     }
 
                   
