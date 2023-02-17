@@ -9,7 +9,7 @@ import { BsYoutube} from 'react-icons/bs';
 
 const TopHeader = () => {
     return (
-        <div className='bg-[#0F4E66] py-4 '>
+        <div className='bg-[#F6811C] py-4 '>
           <div className='w-[95%] md:w-11/12 mx-auto flex justify-between'>
          <div className='flex gap-5 items-center '>
          <div>

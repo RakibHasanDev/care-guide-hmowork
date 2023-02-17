@@ -1,11 +1,7 @@
 [
+    
     {
-        "name" : "HHA",
-        "img" : "https://i.ibb.co/fnMwYyD/HHA.jpg",
-        "description" : "Supports patients by providing housekeeping and laundry services, shopping for food and other household requirements, preparing and serving meals and snacks, and running errands"
-    },
-    {
-        "name" : "PCA",
+        "name" : "HHA / PCA",
         "img" : "https://i.ibb.co/0nCT2sg/DSC03149.jpg",
         "description" : "This service will allow us to send a professionally trained and certified home health aide to take care of family or loved ones, leaving you worry-free and with peace of mind."
     },

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Services.css'
 import { Link } from 'react-router-dom';
 
-import contact from '../../../src/Assests/contact.jpg'
+import contact from '../../../src/Assests/customer Support.png'
 import topImg from '../../../src/Assests/home-services-01.jpg'
 import ServiceCard from './ServiceCard';
 
@@ -24,13 +24,13 @@ const Services = () => {
             <div className='md:grid grid-cols-7 gap-8 '>
 
                <div className='col-span-2 mt-5'>
-               <div className='bg-[#0F4E66] p-6  text-white order-2 md:order-none rounded-md'>
-                    <p className='font-semibold text-xl'>Available 24 Hours </p>
+               <div className='bg-gradient-to-r from-orange-400 to-red-400 p-6  text-white order-2 md:order-none rounded-md'>
+                    <p className=' text-xl font-semibold'>Available 24/7 Hours </p>
 
                     <img src={contact} alt="" className='w-full mt-2 rounded-sm' />
 
                     <p className='mt-3 '>
-                        If you have a question about our themes, please feel free to contact us!
+                        If you have a question about our service, please feel free to contact us!
                     </p>
 
                     <p className='mt-2'>
@@ -38,7 +38,7 @@ const Services = () => {
                     </p>
 
                     <p className='mt-8'>
-                    Our support Hotline is available 24 Hours a day: 
+                    Our support Hotline is available 24/7 Hours a day: 
                     </p>
                     <p>
                     Tel: 516-367-2266
@@ -57,17 +57,17 @@ const Services = () => {
                     </Link>
 
                     <div className='mt-3 order-1 '>
-                        <p className='text-4xl text-[#0F4E66]'>
+                        <p className='text-4xl text-[#164273]'>
                            Services 
                         </p>
                         <img src={topImg} alt="" className='mt-2  md:h-[430px] w-full rounded-md' />
                     </div>
 
-                    <p className='text-sm mt-2 font-semibold'>
+                    <p className='text-sm mt-2 font-semibold text-gray-800'>
                     Cottage Home Care Service offers comprehensive care solutions to make our clients safe and independent:
                     </p>
 
-                    <ul className='pl-4 mt-2'>
+                    <ul className='pl-4 mt-2 text-gray-800 font-semibold'>
                         <li className='list-disc'>HHA </li>
                         <li className='list-disc'> PCA </li>
                         <li className='list-disc'>CDPAP </li>
@@ -80,9 +80,9 @@ const Services = () => {
 
             </div>
             <div>
-            <h1 className='mt-8 mb-2 text-gray-600 font-semibold text-3xl'>Details Of Our Services </h1>
-            <hr className='lg:w-[25%] md:w-[50%] w-[75%] border-2 border-[#0F4E66]' />
-            <div className='grid md:grid-cols-2 lg:grid-cols-3  gap-8 mt-3'>
+            <h1 className='mt-8 mb-2 text-gray-800 font-semibold text-3xl'>Details Of Our Services </h1>
+            <hr className='lg:w-[25%] md:w-[50%] w-[75%] border-2 border-[#FB903F]' />
+            <div className='grid md:grid-cols-2   gap-8 mt-3'>
                
                 {
                     services.map((service, index) => <ServiceCard

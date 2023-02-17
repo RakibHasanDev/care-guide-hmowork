@@ -4,7 +4,7 @@ import footerLogo from '../../../src/Assests/Cottage Home.png'
 
 const Footer = () => {
 	return (
-		<footer className=" bg-[#0F4053] px-4 bg- divide-y  text-white">
+		<footer className=" bg-gradient-to-r from-orange-400 to-purple-400  px-4 bg- divide-y  text-white">
 			<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 				<div className="lg:w-1/3">
 					<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">

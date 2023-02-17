@@ -6,14 +6,14 @@ import navLogo from '../../../src/Assests/Cottage Home.png'
 
 const NavBar = () => {
 
-    const user = {};
+    
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
 
     return (
-        <div className=" sticky top-10 z-50 py-1">
+        <div className=" sticky top-0 z-50 py-1">
             <div className="px-4 py-2 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink
@@ -23,7 +23,7 @@ const NavBar = () => {
                         className="inline-flex items-center"
                     >
                         <img src={navLogo} className='w-[80px] h-14' alt="" />
-                        <span className="ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#0F4E66] transition-colors duration-200  hover:text-teal-accent-400 hover:text-blue-900">
+                        <span className="ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#F6811C] transition-colors duration-200  hover:text-teal-accent-400 hover:text-blue-900">
                             Cottage Home Care Service
                         </span>
                     </NavLink>
@@ -34,7 +34,7 @@ const NavBar = () => {
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Home
                             </NavLink>
@@ -44,7 +44,7 @@ const NavBar = () => {
                                 to='/services'
                                 aria-label="services"
                                 title="services"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Services
                             </NavLink>
@@ -56,9 +56,9 @@ const NavBar = () => {
                                 to='/contacts'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
-                                Contact Us
+                                Contact US
                             </NavLink>
                         </li>
 
@@ -67,7 +67,7 @@ const NavBar = () => {
                                 to='/covid'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Covid-19
                             </NavLink>
@@ -78,7 +78,7 @@ const NavBar = () => {
                                 to='/hhaCertification'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 HHA Certification
                             </NavLink>
@@ -88,7 +88,7 @@ const NavBar = () => {
                                 to='/resources'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Resources
                             </NavLink>
@@ -98,7 +98,7 @@ const NavBar = () => {
                                 to='/blog'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                             >
                                 Blog
                             </NavLink>
@@ -108,6 +108,7 @@ const NavBar = () => {
 
 
                     </ul>
+                    
 
                     <div className="lg:hidden">
                         <button
@@ -143,7 +144,7 @@ const NavBar = () => {
                                                 className="inline-flex items-center"
                                             >
                                                 <img src={navLogo} className='w-12' alt="" />
-                                                <span className="ml-2 text-md  tracking-wide text-[#0F4E66] hover:text-blue-900">
+                                                <span className="ml-2 text-md  tracking-wide text-[#F6811C] hover:text-blue-900">
                                                     Cottage Home Care Service
                                                 </span>
                                             </NavLink>
@@ -176,7 +177,7 @@ const NavBar = () => {
                                                     to='/home'
                                                     aria-label="Home"
                                                     title="Home"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Home
                                                 </NavLink>
@@ -186,7 +187,7 @@ const NavBar = () => {
                                                     to='/services'
                                                     aria-label="services"
                                                     title="services"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Services
                                                 </NavLink>
@@ -198,9 +199,9 @@ const NavBar = () => {
                                                     to='/contacts'
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
-                                                    Contact Us
+                                                    Contact US
                                                 </NavLink>
                                             </li>
 
@@ -209,7 +210,7 @@ const NavBar = () => {
                                                     to='/covid'
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Covid-19
                                                 </NavLink>
@@ -220,7 +221,7 @@ const NavBar = () => {
                                                     to='/hhaCertification'
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     HHA Certification
                                                 </NavLink>
@@ -230,7 +231,7 @@ const NavBar = () => {
                                                     to='/resources'
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Resources
                                                 </NavLink>
@@ -240,7 +241,7 @@ const NavBar = () => {
                                                     to='/blog'
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-medium tracking-wide text-[#0F4E66] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                    className="font-medium tracking-wide text-[#F6811C] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Blog
                                                 </NavLink>
@@ -258,6 +259,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
+           
         </div>
     );
 };
