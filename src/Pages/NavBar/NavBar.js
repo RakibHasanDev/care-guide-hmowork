@@ -2,20 +2,28 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import navLogo from '../../../src/Assests/Cottage Home.png'
+import './Nav.css'
 
 
 const NavBar = () => {
 
-    
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     // top-0 z-50
-
     // #164273
 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        if (window.scrollY > 5 ) {
+            document.getElementById("navBar").className = "customColor";
+        }
+        if (window.scrollY < 5 ) {
+            document.getElementById("navBar").className = "";
+        }
+    }
+
     return (
-        <div className=" sticky  py-1">
+        <div className=" sticky top-0 z-50  py-1" id='navBar'>
             <div className="px-4 py-2 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink
@@ -36,7 +44,7 @@ const NavBar = () => {
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className="font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                className="font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white "
                             >
                                 Home
                             </NavLink>

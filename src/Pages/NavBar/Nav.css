@@ -1,0 +1,11 @@
+.customColor{
+    background-color: rgba( 246, 129, 28, .9);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+   
+}
+
+.customColor  .white {
+    color: White !important;
+}
