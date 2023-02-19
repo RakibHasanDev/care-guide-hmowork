@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { ImLocation2 } from 'react-icons/im';
+
 const ContactCard = ({ contact }) => {
 
     const { office, address, Hours, map,id } = contact
@@ -14,8 +16,15 @@ const ContactCard = ({ contact }) => {
             </figure>
             <div className="card-body space-y-1">
                 <h2 className="text-2xl font-semibold text-[#F6811C]">{office}</h2>
-
-                <p className='text-gray-700'> <span className='font-semibold'>Address:</span> {address}</p>
+                <div className='flex gap-2 items-center'>
+                    <div>
+                        <ImLocation2 className='font-semibold text-xl text-[#F6811C]  ' />
+                    </div>
+                    <div>
+                        <p>{address}</p>
+                    </div>
+                    </div>
+                
 
                 <div className="dropdown dropdown-top">
                     <label tabIndex={0} className=" cursor-pointer"> Open today <span className='text-orange-400'>09:00 am – 05:00 pm</span>

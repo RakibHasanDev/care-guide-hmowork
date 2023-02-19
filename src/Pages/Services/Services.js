@@ -24,12 +24,12 @@ const Services = () => {
             <div className='md:grid grid-cols-7 gap-8 '>
 
                 <div className='col-span-2 mt-5'>
-                    <div className='bg-gradient-to-r from-orange-400 to-red-400 p-6  text-white order-2 md:order-none rounded-md' data-aos="fade-down" data-aos-duration='2000'>
+                    <div className='bg-gradient-to-r from-orange-400 to-red-400 p-5  text-white order-2 md:order-none rounded-md' data-aos="fade-down" data-aos-duration='2000'>
                         <p className=' text-xl font-semibold'>Available 24/7 Hours </p>
 
-                        <img src={contact} alt="" className='w-full mt-2 rounded-sm' />
+                        <img src={contact} alt="" className='w-full mt-2 rounded-md' />
 
-                        <p className='mt-3 '>
+                        <p className='mt-3  '>
                             If you have a question about our service, please feel free to contact us!
                         </p>
 
@@ -82,7 +82,7 @@ const Services = () => {
             <div>
                 <h1 className='mt-8 mb-2 text-gray-800 font-semibold text-3xl'>Details Of Our Services </h1>
                 <hr className='lg:w-[25%] md:w-[50%] w-[75%] border-2 border-[#FB903F]' />
-                <div className='grid md:grid-cols-2   gap-8 mt-3'>
+                <div className='grid md:grid-cols-2 lg:w-[80%] mx-auto gap-8 mt-3'>
 
                     {
                         services.map((service, index) => <ServiceCard
