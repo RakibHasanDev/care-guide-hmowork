@@ -1,5 +1,6 @@
 import Blog from "../Pages/Blog/Blog";
 import Contacts from "../Pages/Contacts/Contacts";
+import SingleContacts from "../Pages/Contacts/SingleContacts/SingleContacts";
 import Covid from "../Pages/Covid/Covid";
 import HHACertification from "../Pages/HHACertification/HHACertification";
 import Resourses from "../Pages/Resourses/Resourses";
@@ -31,6 +32,11 @@ const router = createBrowserRouter ([
             {
                 path: '/contacts',
                 element: <Contacts></Contacts>
+            },
+            {
+                path: '/contacts/:id',
+                loader: ({ params }) => fetch(`http://localhost:5000/contacts/${params.id}`),
+                element: <SingleContacts></SingleContacts>
             },
             
             {

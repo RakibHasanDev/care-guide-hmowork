@@ -1,20 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import { useQuery } from 'react-query';
 import './contact.css'
 import ContactCard from './ContactCard';
 
 const Contacts = () => {
 
-    const [contacts, setContacts] = useState([])
+  
 
-    useEffect(()=>{
-        fetch('contacts.json')
-        .then(res=>res.json())
-        .then(data=>setContacts(data))
+    const url = 'http://localhost:5000/contacts'
 
-    },[])
+    const { data: contacts = [], isLoading } = useQuery({
+        queryKey: ['categories'],
+        queryFn: async () => {
+            const res = await fetch(url);
+            const data = await res.json();
+            return data;
+        }
 
-    console.log(contacts)
+    })
 
+        if(isLoading){
+            return <h1>Loading.......... </h1>
+        }
     return (
 
         <div className='pb-10'>
