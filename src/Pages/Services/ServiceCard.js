@@ -12,7 +12,7 @@ const ServiceCard = ({ service }) => {
           data-aos-duration="1000"
           className=" rounded-xl w-full  p-[5px]"
         >
-          <div className="flex rounded-xl flex-col justify-between bg-gradient-to-r from-orange-400 to-blue-400 shadow-lg lg:h-[32rem] h-[29rem] md:h-[31rem]">
+          <div className="flex rounded-xl flex-col justify-between bg-[#0F4E66] shadow-lg lg:h-[32rem] h-[29rem] md:h-[31rem]">
             <div className="flex flex-col justify-center text-white">
               <div className="p-5 transition-transform duration-500 transform ease-in-out hover:scale-105">
                 <img

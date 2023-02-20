@@ -11,7 +11,7 @@ const ContactCard = ({ contact }) => {
             <figure>
                 <iframe src={map} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className=' lg:w-[500px]  h-64 m-1 border-4 border-[#F6F6F6]'></iframe>
 
-                {/* <img className='lg:w-96 h-64' src={map} alt="Movie" /> */}
+                
 
             </figure>
             <div className="card-body space-y-1">
