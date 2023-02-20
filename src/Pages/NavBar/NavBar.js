@@ -17,6 +17,11 @@ const NavBar = () => {
 
         
      }  
+     else if(pathname ==='/covid'){
+        setNavColor(true)
+
+        
+     }  
 
      else{
         setNavColor(false)

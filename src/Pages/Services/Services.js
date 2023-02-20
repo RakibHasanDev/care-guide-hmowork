@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Services.css'
-import { Link } from 'react-router-dom';
-
 import contact from '../../../src/Assests/customer Support.png'
-import topImg from '../../../src/Assests/home-services-01.jpg'
 import ServiceCard from './ServiceCard';
 import Slider from './Slider/Slider';
 
