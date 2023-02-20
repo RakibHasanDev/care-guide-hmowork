@@ -1,11 +1,31 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import navLogo from '../../../src/Assests/Cottage Home.png'
 import './Nav.css'
 
 
 const NavBar = () => {
+    const {pathname} = useLocation();
+
+    const [navColor, setNavColor] = useState(false)
+
+    useEffect(()=>{
+
+     if(pathname === '/contacts'){
+        setNavColor(true)
+
+        
+     }  
+
+     else{
+        setNavColor(false)
+     }
+    
+
+
+    },[pathname])
+
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     // top-0 z-50
@@ -33,7 +53,7 @@ const NavBar = () => {
                         className="inline-flex items-center"
                     >
                         <img src={navLogo} className='w-[80px] h-14' alt="" />
-                        <span className="ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#164273] transition-colors duration-200  hover:text-teal-accent-400 hover:text-blue-900 white">
+                        <span className={` ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#164273] transition-colors duration-200  hover:text-teal-accent-400   hover:text-blue-900 ${navColor && 'customWhite' } white`}>
                             Cottage Home Care Service
                         </span>
                     </NavLink>
@@ -44,7 +64,8 @@ const NavBar = () => {
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className="font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white "
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 Home
                             </NavLink>
@@ -54,7 +75,8 @@ const NavBar = () => {
                                 to='/services'
                                 aria-label="services"
                                 title="services"
-                                className="font-medium text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 Services
                             </NavLink>
@@ -66,7 +88,8 @@ const NavBar = () => {
                                 to='/contacts'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 Contact US
                             </NavLink>
@@ -77,7 +100,8 @@ const NavBar = () => {
                                 to='/covid'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium  text-lg tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 Covid-19
                             </NavLink>
@@ -88,7 +112,8 @@ const NavBar = () => {
                                 to='/hhaCertification'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium  text-lg tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 HHA Certification
                             </NavLink>
@@ -98,7 +123,8 @@ const NavBar = () => {
                                 to='/resources'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 Resources
                             </NavLink>
@@ -108,7 +134,8 @@ const NavBar = () => {
                                 to='/blog'
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900 white"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                ${navColor && 'customWhite' } white `}
                             >
                                 Blog
                             </NavLink>
@@ -124,7 +151,7 @@ const NavBar = () => {
                         <button
                             aria-label="Open Menu"
                             title="Open Menu"
-                            className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+                            className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline z-50"
                             onClick={() => setIsMenuOpen(true)}
                         >
                             <svg className="w-5 text-gray-600" viewBox="0 0 24 24">

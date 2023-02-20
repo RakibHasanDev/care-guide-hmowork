@@ -6,23 +6,29 @@ const ServiceCard = ({ service }) => {
     
     const {name, img, description} = service
     return (
-        <div className='bg-hov2 '>
-            <div className=" bg-[#F6F6F6] w-[95%] shadow-lg lg:h-[32rem] h-[29rem] md:h-[31rem] mx-auto rounded-md  my-3 relative text-gray-500" data-aos="zoom-in-up" data-aos-duration='1000'  >
-               
-                <div className='p-5 transition-transform duration-500 transform ease-in-out hover:scale-105'>
-                    <img className=" rounded-lg h-56 lg:h-72 w-full" src={img} alt="" />
-                </div>
-                <div className="px-5 ">
-                   
-
-                    <h5 className="text-2xl tracking-tight  mt-4 mb-2 monoster-fonts text-orange-500">{name }</h5>
-
-                    <p className=''>{description}</p>
-
-                </div>
-                
+        <div className="relative flex w-full mx-auto mt-10 bg-hov2">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          className=" rounded-xl w-full  p-[5px]"
+        >
+          <div className="flex rounded-xl flex-col justify-between bg-gradient-to-r from-orange-400 to-blue-400 shadow-lg lg:h-[32rem] h-[29rem] md:h-[31rem]">
+            <div className="flex flex-col justify-center text-white">
+              <div className="p-5 transition-transform duration-500 transform ease-in-out hover:scale-105">
+                <img
+                  src={img}
+                  alt=""
+                  className="rounded-lg rounded-br-[100px] h-56 lg:h-72 w-full"
+                />
+              </div>
+              <div className="px-5">
+                <h1 className="text-2xl font-extrabold mb-4">{name}</h1>
+                <p className="font-medium mb-6  ">{description}</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     );
 };
 

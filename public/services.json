@@ -1,7 +1,12 @@
 [
     
     {
-        "name" : "HHA / PCA",
+        "name" : "HHA ",
+        "img" : "https://i.ibb.co/p0cGRZr/Home-Health-Aide-md.jpg",
+        "description" : "On the most basic level, being a good home health aide means being a compassionate caregiver helping another person. Home health aides provide basic, personal care to clients."
+    },
+    {
+        "name" : "PCA",
         "img" : "https://i.ibb.co/0nCT2sg/DSC03149.jpg",
         "description" : "This service will allow us to send a professionally trained and certified home health aide to take care of family or loved ones, leaving you worry-free and with peace of mind."
     },

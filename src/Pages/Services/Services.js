@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import contact from '../../../src/Assests/customer Support.png'
 import topImg from '../../../src/Assests/home-services-01.jpg'
 import ServiceCard from './ServiceCard';
+import Slider from './Slider/Slider';
 
 
 const Services = () => {
@@ -48,7 +49,7 @@ const Services = () => {
                 </div>
 
                 <div className='mt-5 col-span-5 order-1' data-aos="fade-left" data-aos-duration='2000'>
-                    <Link to='/home' className='mr-3 text-gray-700 font-semibold'>
+                    {/* <Link to='/home' className='mr-3 text-gray-700 font-semibold'>
                         Home
                     </Link>
                     /
@@ -71,9 +72,9 @@ const Services = () => {
                         <li className='list-disc'>HHA </li>
                         <li className='list-disc'> PCA </li>
                         <li className='list-disc'>CDPAP </li>
-                    </ul>
+                    </ul> */}
 
-
+                        <Slider></Slider>
                 </div>
 
 
@@ -82,7 +83,7 @@ const Services = () => {
             <div>
                 <h1 className='mt-8 mb-2 text-gray-800 font-semibold text-3xl'>Details Of Our Services </h1>
                 <hr className='lg:w-[25%] md:w-[50%] w-[75%] border-2 border-[#FB903F]' />
-                <div className='grid md:grid-cols-2 lg:w-[80%] mx-auto gap-8 mt-3'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 lg:w-[95%] mx-auto gap-8 mt-3'>
 
                     {
                         services.map((service, index) => <ServiceCard
