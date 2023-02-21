@@ -13,7 +13,7 @@ import { Pagination } from "swiper";
 import service1 from '../../../src/Assests/covid-1.jpeg'
 import service2 from '../../../src/Assests/covid-2.jpg'
 import service3 from '../../../src/Assests/covid-3.jpg'
-import { Link } from 'react-router-dom';
+
 
 
 const CovidSlider = () => {
@@ -25,7 +25,7 @@ const CovidSlider = () => {
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
+            return '<span class="' + className + '">' + (index + 1) +  "</span>";
         },
     };
     return (
@@ -40,42 +40,22 @@ const CovidSlider = () => {
                         <SwiperSlide className='relative ' key={i}>
                             {/* <img className='mx-auto slide-img' src={slide.img} alt="" /> */}
                             <div
-                                className="lg:h-[80vh] bg-cover bg-center bg-no-repeat text-white  "
+                                className="lg:h-[70vh] h-[50vh] bg-cover bg-center bg-no-repeat text-white  "
                                 style={{
                                     backgroundImage: `url(${slide.img})`,
                                 }}
 
-
                             >
-                                {/* <div className="bg-simple-2 h-full w-full lg:pt-32 p-5 lg:pl-20 ">
-                            <div>
-                                <h1 className="lg:text-5xl text-2xl">
-                                    <p className="text-4xl text-orange-400 font-semibold">Cottage Home  </p>
-                                    <p className="text-4xl mt-3 text-orange-400 font-semibold"> Care Service </p>
+                               
 
-                                </h1>
-                                <p className="py-3 text-sm md:text-xl md:w-3/6 ">
-
-                                    The Right Home Care for You
-
-                                    PCA & CDPAP Services throughout New York City
-                                </p>
-                                <Link to='/blog'>
-                                    <button className="bg-gradient-to-r from-orange-400 to-red-400 font-semibold px-3 py-2 md:px-4 md:py-3 rounded-md">
-                                        Contact Us
-                                    </button>
-                                </Link>
-                            </div>
-                        </div> */}
-
-                                <div className='h-full w-full bg-simple py-3 '>
-                                    <div className='  w-[95%] mx-auto mt-[25vh] lg:text-4xl text-2xl text-center text-white lobStar '>
+                                <div className='h-full w-full bg-simple-2 py-3 '>
+                                    <div className='md:w-[95%] mx-auto mt-[20vh] lg:text-4xl text-xl text-center text-white lobStar '>
                                         <p className='mt-2 '>
 
-                                            The Step We are taking for the covid
+                                            Keep a daily routine, such as taking a shower and getting dressed
                                         </p>
-                                        <p className='mt-2'>to help you or a family member live at home</p>
-                                        <p className='mt-2'>Contact us today! 516-367-2266</p>
+                                        <p className='mt-2'>Take breaks from COVID-19 news and social media.</p>
+                                        <p className='mt-2'>Stay physically active</p>
 
                                     </div>
 

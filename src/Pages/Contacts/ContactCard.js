@@ -49,7 +49,7 @@ const ContactCard = ({ contact }) => {
 
                 <div className="card-actions justify-end">
                    <Link  to={`/contacts/${id}`} >
-                   <button className="btn bg-[#F6811C]">See More</button>
+                   <button className="btn bg-primary text-white hover:bg-secondary">See More</button>
                    
                    </Link>
                 </div>

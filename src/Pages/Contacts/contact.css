@@ -19,17 +19,20 @@
 }
 
 
-.bg-contact-2 {
+ .bg-contact-2 {
     background-image: linear-gradient(90deg, rgba(0, 199, 76, 0.068), rgba(0, 187, 255, 0.192));
 }
+
 
 
 .bg-simple {
     background-color: rgba(0, 0, 0, 0.232);
 }
 .bg-simple-2 {
-    background-color: rgba(0, 0, 0, 0.29);
-}
+    background-color: rgba(0, 0, 0, 0.412);
+} 
+
+
 
 
 

@@ -25,7 +25,7 @@ const Contacts = () => {
     return (
 
         <div className='pb-10'>
-            <div className='min-h-screen -mt-[82px]'>
+            <div className='min-h-screen -mt-[75px]'>
                 <div className=' bg-contact '>
                     <div className='h-full w-full bg-simple py-3 '>
                         <div className='  w-[95%] mx-auto mt-[25vh] lg:text-4xl text-2xl text-center text-white lobStar '>

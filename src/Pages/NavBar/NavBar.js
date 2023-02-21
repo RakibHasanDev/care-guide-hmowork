@@ -17,11 +17,7 @@ const NavBar = () => {
 
         
      }  
-     else if(pathname ==='/covid'){
-        setNavColor(true)
-
-        
-     }  
+   
 
      else{
         setNavColor(false)
@@ -58,8 +54,8 @@ const NavBar = () => {
                         className="inline-flex items-center"
                     >
                         <img src={navLogo} className='w-[80px] h-14' alt="" />
-                        <span className={` ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#164273] transition-colors duration-200  hover:text-teal-accent-400   hover:text-blue-900 ${navColor && 'customWhite' } white`}>
-                            Cottage Home Care Service
+                        <span className={` ml-4 text-lg md:text-2xl font-semibold tracking-wide text-[#164273] transition-colors duration-200     ${navColor && 'customWhite' } white`}>
+                            Cottage Home Care Services
                         </span>
                     </NavLink>
 
@@ -69,7 +65,7 @@ const NavBar = () => {
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 Home
@@ -80,7 +76,7 @@ const NavBar = () => {
                                 to='/services'
                                 aria-label="services"
                                 title="services"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 Services
@@ -93,7 +89,7 @@ const NavBar = () => {
                                 to='/contacts'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 Contact US
@@ -105,7 +101,7 @@ const NavBar = () => {
                                 to='/covid'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 Covid-19
@@ -117,7 +113,7 @@ const NavBar = () => {
                                 to='/hhaCertification'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 HHA Certification
@@ -128,7 +124,7 @@ const NavBar = () => {
                                 to='/resources'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 Resources
@@ -139,10 +135,21 @@ const NavBar = () => {
                                 to='/blog'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
                                 ${navColor && 'customWhite' } white `}
                             >
                                 Blog
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to='/blog'
+                                aria-label="Blog"
+                                title="Blog"
+                                className={`font-medium  text-lg  tracking-wide text-[#164273] transition-colors duration-200  
+                                ${navColor && 'customWhite' } white `}
+                            >
+                                About
                             </NavLink>
                         </li>
 
@@ -175,7 +182,7 @@ const NavBar = () => {
                             </svg>
                         </button>
                         {isMenuOpen && (
-                            <div className="absolute top-0 left-0 w-full">
+                            <div className="absolute top-0 left-0 w-full z-50">
                                 <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
@@ -286,6 +293,16 @@ const NavBar = () => {
                                                     className="font-medium tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
                                                 >
                                                     Blog
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink
+                                                    to='/about'
+                                                    aria-label="about"
+                                                    title="About"
+                                                    className="font-medium tracking-wide text-[#164273] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                >
+                                                    About
                                                 </NavLink>
                                             </li>
 

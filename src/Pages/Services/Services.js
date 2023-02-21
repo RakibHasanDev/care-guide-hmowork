@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Services.css'
 import contact from '../../../src/Assests/customer Support.png'
-import ServiceCard from './ServiceCard';
 import Slider from './Slider/Slider';
+import ServiceSlider from './ServiceSlider';
 
 
 const Services = () => {
@@ -46,30 +46,7 @@ const Services = () => {
                 </div>
 
                 <div className='mt-5 col-span-5 order-1' data-aos="fade-left" data-aos-duration='2000'>
-                    {/* <Link to='/home' className='mr-3 text-gray-700 font-semibold'>
-                        Home
-                    </Link>
-                    /
-                    <Link to='/services' className='ml-3 text-gray-700 font-semibold'>
-                        Service
-                    </Link>
-
-                    <div className='mt-3 order-1 '>
-                        <p className='text-4xl text-[#164273]'>
-                            Services
-                        </p>
-                        <img src={topImg} alt="" className='mt-2  md:h-[430px] w-full rounded-md' />
-                    </div>
-
-                    <p className='text-sm mt-2 font-semibold text-gray-800'>
-                        Cottage Home Care Service offers comprehensive care solutions to make our clients safe and independent:
-                    </p>
-
-                    <ul className='pl-4 mt-2 text-gray-800 font-semibold'>
-                        <li className='list-disc'>HHA </li>
-                        <li className='list-disc'> PCA </li>
-                        <li className='list-disc'>CDPAP </li>
-                    </ul> */}
+                  
 
                         <Slider></Slider>
                 </div>
@@ -82,24 +59,7 @@ const Services = () => {
                 <hr className='lg:w-[25%] md:w-[50%] w-[75%] border-2 border-[#FB903F]' />
                
 
-                
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 lg:w-[95%] mx-auto gap-8 mt-3'>
-
-                    {
-                        services.map((service, index) => <ServiceCard
-                            key={index}
-                            service={service}
-                        >
-
-
-
-                        </ServiceCard>)
-                    }
-
-
-
-                </div>
-
+                <ServiceSlider></ServiceSlider>
             </div>
 
         </div>

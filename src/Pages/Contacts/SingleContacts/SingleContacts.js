@@ -16,14 +16,12 @@ const SingleContacts = () => {
         <div className='min-h-screen py-10 w-11/12 mx-auto'>
             
 
-            <div className='grid md:grid-cols-2 gap-8 mt-5 bg-[#F6F6F6] py-10'
+            <div className='grid md:grid-cols-2 gap-8 mt-5 bg-[#F6F6F6] py-10 shadow-lg'
             data-aos="fade-right" data-aos-duration='2000'>
 
                 <div className='text-center'>
                 <figure className='rounded-2xl '>
                 <iframe src={map} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-[90%] mx-auto h-[60vh] m-1 border-4 border-[#F6F6F6] shadow-xl '></iframe>
-
-                
 
             </figure>
                 </div>
